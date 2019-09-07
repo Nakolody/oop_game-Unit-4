@@ -3,10 +3,12 @@
  * Game.js */
 const div = document.querySelector('#overlay');
 const gameMessage = document.getElementById('game-over-message');
+const div2 = document.createElement('div');
+div.appendChild(div2);
 const count = 1;
 let image = document.createElement('img');
 image.setAttribute('class','picture');
-div.appendChild(image);
+div2.appendChild(image);
 
 class Game {
     constructor() {
